@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum Square Difference</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    
+function ssd(num) {
+
+    var n = num;
+    var squared = 0;
+    var sum = 0;
+    var sum2 = 0;
+    var sum3 = 0;
+    var diff = 0;
+
+    for (var i = 1; i <= n; i++) {
+        
+        squared = i * i;
+        sum+= squared;
+    }
+
+    for (var i = 1; i <= n; i++) {
+        
+        sum2 += i;
+        sum3 = sum2 * sum2;
+    }
+
+    diff = sum3 - sum;
+    console.log("the difference of the square of the sum and the sum of the squares of the first ten natural numbers is " + sum3 + " - " + sum + "= " + diff); 
+
+}
+
+</script>
+
+</body>
+</html>

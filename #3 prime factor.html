@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Prime Factorization</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        
+        function prime(num) {
+            var x = num;
+            var i = 2;
+
+            while (i <= x) {
+                if (x % i == 0) {
+                    x /= i;
+                    console.log(i);
+                } else {
+                    i++;
+                }
+            }
+        } 
+            
+
+
+    </script>
+
+</body>
+</html>

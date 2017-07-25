@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phythagorean Triplets</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    
+        // a + b + c = 1000
+        // a^2 + b^2 = c^2
+
+    function tri() {
+
+        var a = 0;
+        var b = 0;
+        var c = 0;
+        var total = 1000;
+
+        for (a = 1; a < Math.floor(total / 3); a++) {
+            for (b = a + 1; b < Math.floor(total / 2); b++) {
+                c = 1000 - a - b;
+                if (c*c === a*a + b*b) {
+                    console.log(a,b,c);
+                }
+            }
+        }
+
+    }
+
+
+
+</script>
+
+</body>
+</html>
